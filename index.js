@@ -78,8 +78,8 @@ document.getElementById("cv__dt").onclick = function () {
 
 /** Bài 5 tính tổng 2 ký số trong 1 chữ số bất kỳ
  * Input: Nhập vào 1 số bất kỳ gồm 2 chữ số
- * Process: Lấy số hàng chục = số %10
- *          Lấy số hàng đơn vị = số /10
+ * Process: Lấy số hàng chục = số /10
+ *          Lấy số hàng đơn vị = số %10 và xét nếu số âm thì giá trị tuyệt đối thành số dương
  *          Tổng = sốhang chục + số hàng đv
  * Ouput: Xuất ra số tổng 2 ký số
  */

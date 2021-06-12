@@ -64,12 +64,12 @@ document.getElementById("doi__tien").onclick = function () {
 
 document.getElementById("cv__dt").onclick = function () {
   var chieuDai = document.getElementById("chieu__dai");
-  var valDai = chieu__dai.value;
+  var valDai = +chieu__dai.value;
 
   var chieuRong = document.getElementById("chieu__rong");
-  var valRong = chieu__rong.value;
+  var valRong = +chieu__rong.value;
 
-  var cv = valDai * 2 + valRong * 2;
+  var cv = (valDai + valRong) * 2;
   var dt = valDai * valRong;
 
   document.getElementById("chu__vi").innerHTML = cv;
